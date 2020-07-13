@@ -1,0 +1,17 @@
+FROM node:12.16.2
+
+WORKDIR /api
+
+EXPOSE 8080
+
+#ENSURE ES5 TO ES6 CONVERSATION
+RUN npm install -g --save-dev @babel/core @babel/cli @babel/preset-env @babel/node
+RUN npm i -g nodemon 
+
+COPY package*.json ./
+
+RUN npm i
+
+COPY . .
+
+CMD ["npm","start"] 

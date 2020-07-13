@@ -1,0 +1,34 @@
+.content {
+  font-family: monospace;
+  padding: 8px 7px;
+  background-color: #eaeaea;
+  font-size: smaller;
+  margin: 2px 0px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  color: cornflowerblue;
+}
+
+.download-btn {
+  float: right;
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.folder {
+  color: #fafafa;
+  background-color: #f8d775 !important;
+}
+.file {
+  color: #fafafa;
+  background-color: #ffe9a2 !important;
+}
+.upload {
+  float: right;
+}
+.header {
+  margin-bottom: 50px !important;
+}

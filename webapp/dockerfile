@@ -1,0 +1,16 @@
+FROM node:12.16.2
+
+WORKDIR /webapp
+
+EXPOSE 3000
+
+RUN npm i -g react-scripts@^3.4.0
+RUN npm i react-scripts@^3.4.0
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+CMD [ "npm","start" ] 
