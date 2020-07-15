@@ -17,5 +17,5 @@ app.use(fileUpload());
 app.use("/", fsRouter);
 
 server.listen(PORT, () => {
-  console.log("FS API Started", PORT);
+    console.log("FS API Started", PORT);
 });
